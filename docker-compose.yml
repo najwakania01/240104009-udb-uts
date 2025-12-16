@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: uts_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_uts
+      MYSQL_DATABASE: uts_mysql_db
+      MYSQL_USER: uts_user
+      MYSQL_PASSWORD: uts_password
+    networks:
+      uts_internal_net:
+        ipv4_address: 172.30.9.10
+
+  postgres:
+    image: postgres:15
+    container_name: uts_postgres
+    environment:
+      POSTGRES_DB: uts_postgres_db
+      POSTGRES_USER: uts_user
+      POSTGRES_PASSWORD: uts_password
+    networks:
+      uts_internal_net:
+        ipv4_address: 172.30.9.20
+
+  adminer:
+    image: adminer
+    container_name: uts_adminer
+    ports:
+      - "IP_ZEROTIER_KAMU:8007:8080"
+    networks:
+      uts_internal_net:
+        ipv4_address: 172.30.9.30
+
+networks:
+  uts_internal_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.9.0/24
