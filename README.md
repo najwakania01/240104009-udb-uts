@@ -126,17 +126,10 @@ docker ps
 
 Lampirkan screenshot berikut:
 
-1. Output `docker ps`
-2. Adminer diakses melalui **IP ZeroTier**
-3. Login Adminer ke **MySQL**
-4. Login Adminer ke **PostgreSQL**
-
----
-
-## ZeroTier
-
-* **Network ID ZeroTier**: *(isi sesuai akun ZeroTier masing-masing)*
-* ZeroTier dijalankan di **HOST**, bukan container.
+1. ![Docker PS](screenshots/docker_ps.png)
+2. ![Adminer Zerotier](screenshots/adminer_zerotier.png)
+3. ![Login MySQL](screenshots/login_mysql.png)
+4. ![Login PostgreSQL](screenshots/login_postgres.png)
 
 ---
 
