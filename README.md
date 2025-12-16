@@ -1,27 +1,27 @@
+# UTS Manajemen Basis Data
+
+## Identitas Mahasiswa
+- Nama  : Najwa Kania  
+- NIM   : 240104009  
+- Mata Kuliah : Manajemen Basis Data  
+- Repository : 240104009-udb-uts  
 
 ---
 
-## Konfigurasi Service
-### 1. MySQL
-- Container name : `uts_mysql`
-- Port : `3306`
-- User : `root`
-- Database : `uts_db`
-
-### 2. PostgreSQL
-- Container name : `uts_postgres`
-- Port : `5432`
-- User : `uts_user`
-- Database : `uts_pgdb`
-
-### 3. Adminer
-- Port : `8009`
-- Digunakan untuk mengelola MySQL dan PostgreSQL melalui browser
+## Deskripsi Project
+Project ini dibuat untuk memenuhi tugas UTS Manajemen Basis Data dengan menerapkan konsep manajemen database menggunakan **Docker** dan **WSL (Windows Subsystem for Linux)**.  
+Sistem ini menggunakan **MySQL** dan **PostgreSQL** sebagai database server serta **Adminer** sebagai database management tool berbasis web.
 
 ---
 
-## Cara Menjalankan Project
-1. Buka **WSL (Ubuntu)**
-2. Masuk ke direktori project:
-   ```bash
-   cd 240104009-udb-uts
+## Teknologi yang Digunakan
+- Docker & Docker Compose  
+- WSL (Ubuntu)  
+- MySQL  
+- PostgreSQL  
+- Adminer  
+
+---
+
+## Struktur Folder
+
